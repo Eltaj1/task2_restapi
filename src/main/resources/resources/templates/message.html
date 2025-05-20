@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message</title>
+    <style>
+        body {
+            background: #f8fafc;
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        .container {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+            padding: 2.5rem 3rem;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2rem;
+            color: #22223b;
+            margin: 0 0 1rem 0;
+            font-weight: 600;
+            letter-spacing: -.5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 th:text="${message.content}">Message</h1>
+    </div>
+</body>
+</html>
